@@ -5,7 +5,11 @@ import java.util.Arrays;
 public class ReverseString {
     public static void main(String[] args) {
         String str = "freefiremax";
-        System.out.println(reversed(str));
+        System.out.println(reverseUsingSB(str));
+    }
+
+    static String reverseUsingSB(String str){
+        return new StringBuilder(str).reverse().toString();
     }
 
     static String reverse(String str){
