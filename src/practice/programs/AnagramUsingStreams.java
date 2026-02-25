@@ -1,4 +1,4 @@
-package practice.programs.anagram;
+package practice.programs;
 
 import java.util.stream.Collectors;
 
