@@ -2,7 +2,7 @@ package practice.programs.anagram;
 
 import java.util.stream.Collectors;
 
-public class Anagram
+public class AnagramUsingStreams
 {
 	public static void main(String[] args) {
 		String s1 = "listen";
