@@ -2,7 +2,7 @@ package com.kunal.reccurance;
 
 public class Fibonacci {
     public static void main(String[] args) {
-        int ans = fibonacci(8);
+        int ans = fibonacci(5);
         System.out.println(ans);
     }
     // inefficient for large numbers

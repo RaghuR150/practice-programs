@@ -1,7 +1,5 @@
 package practice.programs;
 
-import java.util.Arrays;
-
 public class ReverseString {
     public static void main(String[] args) {
         String str = "freefiremax";
@@ -31,6 +29,7 @@ public class ReverseString {
           start++;
           end--;
       }
+
         return String.valueOf(chars);
     }
 

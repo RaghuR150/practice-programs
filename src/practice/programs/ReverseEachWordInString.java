@@ -2,26 +2,27 @@ package practice.programs;
 
 public class ReverseEachWordInString {
     public static void main(String[] args) {
-        String str = " aravindh is a senior member of the team";
+        String str = "aravindh is a senior member of the team";
         System.out.println(reverse(str));
     }
 
-    private static String reverse(String str) {
+    private static String reverse( String str) {
 
              String[] words = str.split(" ");
              for(int i=0; i<words.length; i++){
                  char[] word = words[i].toCharArray();
                  words[i] = swap(word);
              }
-            String reversed = "";
+            StringBuilder reversed = new StringBuilder();
              for(int i=0; i< words.length; i++){
-                 reversed += words[i];
+                 reversed.append(words[i]);
                  if(i < words.length-1){
-                     reversed += " ";
+                     reversed.append(" ");
                  }
              }
-             return reversed;
+             return reversed.toString();
     }
+
 
     private static String swap(char[] word) {
         int start = 0;
